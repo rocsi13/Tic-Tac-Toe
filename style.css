@@ -1,0 +1,33 @@
+body {
+  background-color: #7FFFD4;
+}
+.text-center {
+  text-align: center;
+ }
+.cell {
+  border: 3px solid #3e4444;
+  padding: 30px;
+  font-size: 20px;
+  font-family: "Permanent Marker", cursive;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor:  pointer;
+  background-color: white;
+  border-radius: 2px;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto; 
+  column-gap: 2px;
+  row-gap: 2px;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.card-body {
+  background-color: #7FFFD4;
+}
