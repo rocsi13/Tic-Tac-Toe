@@ -36,20 +36,21 @@ cells.forEach(function (cell) {
                     roundWon = true;
                     break;
                 }
-             }
-             if (roundWon) {
-                 document.getElementById("message").innerText = "Player " + currentPlayer + " has won!";
-                 gameActive = false;
-                 return;
-             }
-             let roundDraw = !gameState.includes("");
-             if (roundDraw) {
-                 document.getElementById("message").innerText = "It's a draw!";
-                 gameActive = false;
-                 return;
-             }
-             currentPlayer = currentPlayer == "X" ? "O" : "X";
-          }
+            }
+            if (roundWon) {
+                document.getElementById("message").innerText = "Player " + currentPlayer + " has won!";
+                gameActive = false;
+                return;
+            }
+            let roundDraw = !gameState.includes("");
+            if (roundDraw) {
+                document.getElementById("message").innerText = "It's a draw!";
+                gameActive = false;
+                return;
+            }
+            currentPlayer = currentPlayer == "X" ? "O" : "X";
+            document.getElementById("message").innerText = "It's " + currentPlayer + "'s turn!";
+        }
     });
 });
 
